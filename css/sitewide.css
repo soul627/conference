@@ -1,0 +1,896 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/*
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #222;
+}
+
+h1{
+	font-size: 80px;
+	text-align: center;
+	font-family: 'impact', sans-serif;
+	margin:0px;
+}
+
+h2{
+	font-size: 50px;
+	text-align: center;
+	font-family: 'impact', sans-serif;
+	margin:0px;
+}
+
+h3{
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Archivo Black', sans-serif;
+	margin-bottom: 0;
+}
+
+h4{
+	font-size: 50px;
+	text-align: center;
+	font-family: 'Archivo Black', sans-serif;
+}
+
+ul{
+	list-style-type:square;
+}
+
+p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	line-height: 2em;
+}
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area.
+	If you have more than one container, you are probably doing
+	something wrong.
+*/
+.homepage{
+	margin:0;
+}
+.container {
+	background-color:white;
+}
+
+.global-nav ul{
+					padding:2em;
+					display:flex;
+					font-family: 'impact', sans-serif;
+					font-size: 30px;
+					margin:0px;
+				}
+
+.global-nav li{
+					list-style-type: none;
+					text-align: center;
+					flex:3 1 300px;
+					flex-wrap:wrap;
+					min-width: 200px;
+					font-family: 'impact', sans-serif;
+					font-style: bold;
+					margin-left: 20px;
+					margin-right: 20px;
+				}
+
+.global-nav a {
+					background: #6A820E;
+					color:#FFFFFF;
+					text-decoration:none;
+					display: block;
+					padding:15px;
+					font-family: 'impact', sans-serif;
+				}
+
+
+.btn{
+	display: inline-block;
+	background-color:#D6A616;
+	color:#FFFFFF;
+	padding:20px;
+	text-decoration: none;
+	font-size: 26px;
+	margin-top: 30px;
+	margin-bottom: 10%;
+	margin-left: 40%;
+	margin-right: 40%;
+	font-family: 'impact', sans-serif;
+	letter-spacing: 1px;
+}
+
+.tag{
+	background-color: #6A820E;
+	line-height: 5em;
+	padding: 5%;
+	margin-top:5%;
+	margin-bottom:5%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+.explain{
+	text-align: left;
+	line-height: 2em;
+	margin-bottom:3%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+.describe2{
+	line-height: 1.5em;
+	font-size: 30px;
+	color:white;
+}
+
+.describe3{
+	color: rgba(255,255,255,0.8);
+	font-size: 70px;
+}
+.container-home{
+	background-image: url("../img/concrete.jpg");
+	background-attachment:contain;
+}
+
+.describe{
+	color:white;
+	line-height: 2em;
+	letter-spacing: 1px;
+}
+
+.describe3 em{
+	color: rgba(0,0,0,0.5);
+}
+
+.describe2 em{
+	color:grey;
+}
+/* -------------------------------About----------------------------- */
+.box-info{
+	margin-top:5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left: 6%;
+	padding-right:6%;
+}
+
+.info{
+	background-color: #6A820E;
+	color:rgba(255, 255, 255);
+	padding-top: 50px;
+	padding-bottom: 7%;
+	padding-left: 15%;
+	padding-right: 15%;
+	line-height: 1.7em;
+	letter-spacing:0.7px;
+}
+
+.box-ticket{
+	background-size:scroll;
+	margin-left:10%;
+	margin-right:10%;
+	margin-bottom:10%;
+	border-left: 50px solid  #6A820E;
+	border-right: 50px solid  #6A820E;
+	border-bottom: 50px solid  #6A820E;
+}
+
+.tix{
+		background-color: #6A820E;
+		line-height: 0.3em;
+}
+
+.tic{
+	font-size: 22px;
+	text-align: left;
+	margin-left: 20%;
+	line-height: 2em;
+}
+
+/* -------------------------------Speaker----------------------------- */
+.photo_concrete{
+	background-image: url("../img/concrete.jpg");
+	background-attachment:contain;
+}
+.box-all{
+	border-left: 40px solid  #6A820E;
+	border-right: 40px solid  #6A820E;
+	border-bottom: 40px solid  #6A820E;
+}
+.citydev{
+	line-height: 5em;
+}
+.tit{
+	line-height: 1em;
+	background-color: #6A820E;
+	padding-top:10px;
+	padding-bottom:10px;
+	color:rgba(0,0,0, 0.5);
+
+}
+.box-speaker1{
+	display: grid;
+	grid-template-columns:400px 400px 400px;
+	grid-template-rows:350px 400px 300px;
+	margin-left:7%;
+	margin-right:7%;
+	margin-bottom:10%;
+	margin-top:5%;
+}
+
+.photo_Dan{
+ grid-column: 1/1;
+ grid-row: 1/1;
+}
+.bio{
+	font-size: 16px;
+	line-height: 2em;
+}
+.Dan{
+	background-color: rgba(255,255,255,0.6);
+	grid-column: 1/1;
+	grid-row: 2/2;
+	margin-right:2em;
+	margin-left:2em;
+	grid-template-columns: 1fr;
+	display: grid;
+}
+
+.Dan-bio{
+	grid-column: 1/1;
+	grid-row: 2/3;
+}
+
+.Dan-tag{
+	grid-column: 1/1;
+	grid-row: 2/3;
+	background-color: #6A820E;
+	opacity: 0;
+}
+
+.Dan:hover .Dan-tag{
+	opacity: 1;
+}
+
+.photo_Craig{
+	grid-column: 2/2;
+	grid-row: 1/1;
+}
+.Craig{
+	grid-column: 2/2;
+	grid-row: 2/2;
+	background-color: rgba(255,255,255,0.6);
+	margin-right:2em;
+	margin-left:2em;
+}
+
+.photo_Kate{
+	grid-column: 3/3;
+  grid-row: 1/1;
+}
+.Kate{
+	grid-column: 3/3;
+	grid-row: 2/2;
+	background-color: rgba(255,255,255,0.6);
+	margin-left:2em;
+	margin-right:2em;
+}
+
+.photo_Khan{
+	grid-column: 1/1;
+	grid-row: 3/3;
+	margin-top: 3em;
+}
+.Khan{
+	grid-column: 2/4;
+	grid-row: 3/3;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: rgba(255,255,255,0.6);
+	margin-top: 5em;
+}
+
+.intdev{
+	line-height: 5em;
+}
+
+.box-speaker2{
+	display: grid;
+	grid-template-columns:400px 400px 400px;
+	grid-template-rows:350px 400px 300px;
+	margin-left:7%;
+	margin-right:7%;
+	margin-bottom:10%;
+	margin-top:5%;
+}
+
+.photo_Tyler{
+	grid-column: 1/1;
+	grid-row: 1/1;
+}
+.Tyler{
+	grid-column: 1/1;
+	grid-row: 2/2;
+	margin-left:2em;
+	margin-right:2em;
+}
+
+.photo_Fleming{
+	grid-column: 2/2;
+	grid-row: 1/1;
+}
+.Fleming{
+	grid-column: 2/2;
+	grid-row: 2/2;
+	margin-left:2em;
+	margin-right:2em;
+}
+
+.photo_Kent{
+	grid-column: 3/3;
+	grid-row: 1/1;
+}
+.Kent{
+	grid-column: 3/3;
+	grid-row: 2/2;
+	margin-left:2em;
+	margin-right:2em;
+}
+
+.photo_ethan{
+	grid-column: 1/1;
+	grid-row: 3/3;
+	margin-top: 3em;
+}
+.ethan{
+	grid-column:2/4;
+	grid-row: 3/3;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top: 5em;
+}
+
+/* --------------------------------Schedule------------------------- */
+.container-schedule{
+	background-image: url("../img/concrete.jpg");
+	background-attachment:contain;
+}
+
+.name{
+		background-color: #6A820E;
+		font-size: 40px;
+}
+
+.box-day1{
+	text-align: left;
+	background-color: rgba(255, 255, 255);
+	margin:7%;
+	border-left: 50px solid  #6A820E;
+	border-right: 50px solid  #6A820E;
+	border-bottom: 50px solid  #6A820E;
+}
+.agenda{
+	text-align: left;
+	font-size: 20px;
+	line-height: 2em;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.agenda em{
+	color:#45530B;
+	font-size:18px;
+}
+
+.age{
+	line-height: 2em;
+	font-size: 18px;
+	margin-left: 30%;
+	text-align:left;
+}
+.box-day2{
+	text-align: left;
+	background-color: rgba(255, 255, 255);
+	margin:7%;
+	border-left: 50px solid  #6A820E;
+	border-right: 50px solid  #6A820E;
+	border-bottom: 50px solid  #6A820E;
+	margin-bottom: 0;
+}
+
+a {
+  background-color: #6A820E;
+  transition: background-color .5s;
+}
+
+
+.button{
+	display: inline-block;
+	background-color:#f44336;
+	color:#FFFFFF;
+	padding:20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 26px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	opacity: 0.9;
+}
+
+
+a:hover {
+  background-color:#414f09;
+}
+
+/* --------------------------------FAQ------------------------- */
+.box-faq{
+	border-left: 50px solid  #6A820E;
+	border-right: 50px solid  #6A820E;
+	margin-bottom:0;
+}
+
+.FAQ{
+	background-color: #6A820E;
+}
+
+.quetsions{
+	padding:30px;
+	align-content: left;
+}
+
+details{
+	margin:10%;
+	line-height: 1.5em;
+	font-size: 20px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+summary{
+	font-size: 30px;
+	text-align: left;
+	font-family: 'Archivo Black', sans-serif;
+	text-decoration:line-through;
+}
+.see{
+	margin-top: 5em;
+	background-color: #6A820E;
+}
+/* ------------------------------------------------------------ */
+/* media query containing styles for larger screens */
+@media (max-width: 720px) {
+
+
+p{
+	font-size: 16px;
+}
+.global-nav ul{
+						padding:3em;
+						display:table;
+						font-family: 'impact', sans-serif;
+						font-size: 20px;
+					}
+
+	.global-nav li{
+						list-style-type: none;
+						text-align: center;
+						flex:3 1 300px;
+						flex-wrap:wrap;
+						min-width: 200px;
+						font-family: 'impact', sans-serif;
+						font-style: bold;
+						margin-left: 30%;
+						margin-right: 30%;
+					}
+
+	.global-nav a {
+						background: #6A820E;
+						color:#FFFFFF;
+						text-decoration:none;
+						display:block;
+						padding:15px;
+						font-family: 'impact', sans-serif;
+					}
+
+					.photo_concrete{
+						background-image: url("../img/concrete.jpg");
+						background-attachment:contain;
+					}
+					.box-all{
+						border-left: 30px solid  #6A820E;
+						border-right: 30px solid  #6A820E;
+						border-bottom: 30px solid  #6A820E;
+					}
+.btn{
+	display: inline-block;
+	background-color:#D6A616;
+	color:#FFFFFF;
+	padding:20px;
+	text-decoration: none;
+	font-size: 26px;
+	margin-top: 30px;
+	margin-bottom: 10%;
+	margin-left: 40%;
+	margin-right: 40%;
+	font-family: 'impact', sans-serif;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1em;
+}
+
+.tag{
+	background-color: #6A820E;
+	line-height: 5em;
+	padding: 5%;
+	margin-top:5%;
+	margin-bottom:5%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.explain{
+	text-align: left;
+	line-height: 2em;
+	margin-bottom:3%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+.describe2{
+	line-height: 1.5em;
+	font-size: 20px;
+	color:white;
+}
+
+.container-home{
+	background-image: url("../img/concrete.jpg");
+	background-attachment:contain;
+}
+
+.describe{
+	color:white;
+	line-height: 2em;
+	letter-spacing: 1px;
+	font-size: 40px;
+}
+
+.describe em{
+	color: rgba(0,0,0,0.5);
+}
+
+.describe2 em{
+	color:grey;
+}
+
+.describe3{
+	color: rgba(255,255,255,0.8);
+	font-size: 70px;
+}
+
+/* -------------------------------About----------------------------- */
+
+.box-info{
+	margin-top:5%;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+
+.info{
+	background-color: #6A820E;
+	color:rgba(255, 255, 255);
+	padding-top: 30px;
+	padding-bottom: 7%;
+	padding-left: 10%;
+	padding-right: 10%;
+	line-height: 1.7em;
+	letter-spacing:0.7px;
+}
+
+.box-ticket{
+	background-size:scroll;
+	margin-left:5%;
+	margin-right:5%;
+	margin-bottom:10%;
+	border-left: 30px solid  #6A820E;
+	border-right: 30px solid  #6A820E;
+	border-bottom: 30px solid  #6A820E;
+}
+
+.tix{
+		background-color: #6A820E;
+		line-height: 2em;
+		font-size: 25px;
+		color: rgba(0,0,0,0.5);
+}
+
+.tic{
+	font-size: 15px;
+	line-height: 2em;
+	margin-left: 6%;
+}
+
+/* -------------------------------Speaker----------------------------- */
+
+.tit{
+	font-size: 25px;
+	background-color: #6A820E;
+	line-height: 2em;
+}
+
+.name2{
+	font-size: 25px;
+}
+					.box-speaker1{
+						display: grid;
+						grid-template-rows: repeat(6, auto);
+						grid-template-columns: 1fr;
+					}
+
+					.photo_Dan{
+					 grid-column: 1/1;
+					 grid-row: 1/1;
+					 margin-left: auto;
+					 margin-right: auto;
+					}
+					.bio{
+						font-size: 15px;
+						line-height: 2em;
+					}
+					.Dan{
+						background-color: rgba(255,255,255,0.6);
+						grid-column: 1/1;
+						grid-row: 2/2;
+						margin-right:2em;
+						margin-left:2em;
+					}
+
+					.photo_Craig{
+						grid-column: 1/1;
+						grid-row: 3/3;
+						margin-left: auto;
+ 					  margin-right: auto;
+					}
+
+					.Craig{
+						grid-column: 1/1;
+						grid-row: 4/4;
+						background-color: rgba(255,255,255,0.6);
+						margin-right:2em;
+						margin-left:2em;
+					}
+
+					.photo_Kate{
+						grid-column: 1/1;
+					  grid-row: 5/5;
+						margin-left: auto;
+ 					  margin-right: auto;
+					}
+					.Kate{
+						grid-column: 1/1;
+						grid-row: 6/6;
+						background-color: rgba(255,255,255,0.6);
+						margin-left:2em;
+						margin-right:2em;
+					}
+
+					.photo_Khan{
+						grid-column: 1/1;
+						grid-row: 7/7;
+						margin-left: auto;
+ 					  margin-right: auto;
+					}
+					.Khan{
+						grid-column: 1/1;
+						grid-row: 8/8;
+						background-color: rgba(255,255,255,0.6);
+						margin-left:2em;
+						margin-right:2em;
+						padding: 0;
+						margin-top: 0;
+					}
+				.box-speaker2{
+						display: grid;
+						margin-left:7%;
+						margin-right:7%;
+						margin-bottom:10%;
+						margin-top:5%;
+						display: grid;
+						grid-template-rows: repeat(6, auto);
+						grid-template-columns: 1fr;
+					}
+
+					.photo_Tyler{
+						grid-column: 1/1;
+						grid-row: 1/1;
+						margin-left: auto;
+ 					  margin-right: auto;
+					}
+					.Tyler{
+						grid-column: 1/1;
+						grid-row: 2/2;
+						margin-left:2em;
+						margin-right:2em;
+					}
+
+					.photo_Fleming{
+						grid-column: 1/1;
+						grid-row: 3/3;
+						margin-left: auto;
+ 					  margin-right: auto;
+					}
+					.Fleming{
+						grid-column: 1/1;
+						grid-row: 4/4;
+						margin-left:2em;
+						margin-right:2em;
+					}
+
+					.photo_Kent{
+						grid-column: 1/1;
+						grid-row: 5/5;
+						margin-left: auto;
+ 					  margin-right: auto;
+					}
+					.Kent{
+						grid-column: 1/1;
+						grid-row: 6/6;
+						margin-left:2em;
+						margin-right:2em;
+					}
+
+					.photo_ethan{
+						grid-column: 1/1;
+						grid-row: 7/7;
+						margin-left: auto;
+ 					  margin-right: auto;
+					}
+					.ethan{
+						grid-column:1/1;
+						grid-row: 8/8;
+						margin-top: 0;
+					}
+/* -------------------------------Schedule----------------------------- */
+h3{
+	margin-bottom: 0;
+	padding: 5px;
+}
+
+h2{
+	font-size: 30px;
+	line-height: 1em;
+	padding: 5px;
+}
+.box-day2{
+	margin-bottom:0;
+}
+.container-schedule{
+	background-image: url("../img/concrete.jpg");
+	background-attachment:contain;
+}
+
+.name{
+		background-color: #6A820E;
+		font-size: 25px;
+		line-height: 1em;
+		padding: 7px;
+}
+
+.box-day1{
+	text-align: left;
+	background-color: rgba(255, 255, 255);
+	margin:3%;
+	border-left: 30px solid  #6A820E;
+	border-right: 30px solid  #6A820E;
+	border-bottom: 30px solid  #6A820E;
+}
+.agenda{
+	text-align: left;
+	font-size: 17px;
+	line-height: 2em;
+	margin-left:3%;
+	margin-right:auto;
+}
+
+.agenda em{
+	color:#6A820E;
+	font-size:18px;
+}
+
+.age{
+	line-height: 2em;
+	font-size: 18px;
+	margin-left: 30%;
+	text-align:left;
+}
+
+.age li{
+	text-align: left;
+	padding-left:0;
+	margin-left: 0;
+
+}
+
+.box-day2{
+	text-align: left;
+	background-color: rgba(255, 255, 255);
+	margin:3%;
+	border-left: 30px solid  #6A820E;
+	border-right: 30px solid  #6A820E;
+	border-bottom: 30px solid  #6A820E;
+	margin-bottom: 0;
+}
+/* -------------------------------FAQ----------------------------- */
+.box-faq{
+	border-left: 50px solid  #6A820E;
+	border-right: 50px solid  #6A820E;
+	margin-bottom:0;
+}
+
+.FAQ{
+	background-color: #6A820E;
+}
+
+.quetsions{
+	padding:30px;
+	align-content: left;
+}
+
+details{
+	margin:10%;
+	line-height: 1.5em;
+	font-size: 15px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+summary{
+	font-size: 25px;
+	text-align: left;
+	font-family: 'Archivo Black', sans-serif;
+	text-decoration:line-through;
+}
+
+p{
+	font-size: 15px;
+}
+.see{
+	margin-top: 5em;
+	background-color: #6A820E;
+}
+}
+
+	/* container on larger screens */
+/*
+	.container {
+		width: 90%;
+		max-width: 1440px;
+		margin: 2em;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 2em;
+		border: 1px solid #ddd;
+	}
+*/
+ /* end media query */
